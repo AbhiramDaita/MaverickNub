@@ -1,0 +1,184 @@
+.MenuList {
+    list-style-type: none;
+    display:flex;
+    justify-content: space-around;
+    width:900px;
+    color:white;
+    font-family: 'Asap Condensed',sans-serif;
+}
+.MenuList>li:hover{
+    cursor:pointer;
+    transform:scale(1.1);
+    transition: all 300ms;
+}
+
+.MenuBar{
+    display: flex;
+    justify-content: center;
+    background-color:#937DC2;
+}
+.HomePageTitle{
+    height:500px;
+    background-image: url("https://www.pixelstalk.net/wp-content/uploads/2016/04/Mountains-nature-snow-artwork-reid-southen-HD-wallpaper.jpg");
+    background-repeat: no-repeat;
+}
+.PageTitle{
+    font-size:90px;
+    font-family: 'Bebas Neue',cursive;
+}
+.PageDescription{
+    text-align: center;
+    font-size:25px;
+    font-family: 'Signika Negative',sans-serif;
+    width:500px;
+    
+}
+.HomePageDes > p{
+    margin:0px;
+    z-index: 10;
+    color:black;
+}
+
+.HomePageTitle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SocialsList{
+    display:flex;
+    justify-content:space-between;
+    list-style-type: none;
+    padding:0;
+}
+hr{
+    border-color: black;
+    margin-top:30px;
+    opacity:0.5;
+    width:100px;
+}
+.SocialsList > li:hover{
+    cursor:pointer;
+    color:white;
+}
+.AboutBox{
+    background-color: #FFABE1;
+    width: 100%;
+    padding-top:30px;
+    padding-bottom: 30px;
+}
+
+.AboutContent,.ContentBox,.DownloadResume{
+    display: flex;
+}
+
+.AboutContent{
+    margin-left:15%;
+}
+
+.AboutDes{
+    width:700px;
+    font-family: 'Signika Negative',cursive;
+    margin-left:15%;
+}
+
+
+.ContactContent{
+    width:200px;
+}
+.ContactContent > p ,.AboutDes > p{
+    font-size:18px;
+    color:rgba(0, 0,0,0.5);
+}
+
+.ContentBox{
+    margin-top: 20px;
+}
+
+.DownloadResume{
+    background-color: #645CAA;
+    height: fit-content;
+    padding:15px;
+    color:white;
+    font-size: 19px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-top: 100px;
+}
+.EducationContent{
+    display: flex;
+    font-family: 'Signika Negative',cursive;
+    margin-top:50px;
+    
+}
+.EducationTitle{
+    margin-left:15%;
+}
+.EducationTitle > p{
+    font-size: 22px;
+    position: relative;
+   
+}
+
+.EducationTitle>p:after{
+    position: absolute;
+    content:" ";
+    height:4px;
+    background-color:#645CAA;
+    width:100%;
+    bottom:-4px;
+    left:0;
+
+}
+.Uni{
+    width: 700px;
+    margin-bottom: 70px;
+}
+
+.ProgressBar{
+    width:700px;
+    height: 50px;
+    
+    border-radius: 9px;
+}
+.Holder{
+    width:700px;
+}
+
+.WorkBody{
+    background-color: rgba(0, 0,0,0.03);
+    width:100%;
+    height:500px;
+    padding-top:50px;
+    font-family: 'Signika Negative',cursive;
+    
+}
+
+.WorkBody > p{
+    text-align: center;
+    opacity: 0.4;
+}
+
+.column{
+    display: flex;
+    justify-content: center;
+}
+.ContactBody{
+    font-family: 'Signika Negative',cursive;
+}
+.CardImage > img{
+    width:280px;
+    margin:10px;
+    border-radius: 10px;
+}
+.ContactTitle{
+    display:flex;
+}
+.ContactFormHolder{
+    display: flex;
+}
+.ContactTitle > p{
+    font-size:19px;
+}
+.ContactForm > form > input{
+    display:block;
+}
