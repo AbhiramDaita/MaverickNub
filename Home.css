@@ -1,3 +1,8 @@
+
+body{
+    scroll-behavior: smooth;
+}
+
 .MenuList {
     list-style-type: none;
     display:flex;
@@ -6,16 +11,37 @@
     color:white;
     font-family: 'Asap Condensed',sans-serif;
 }
+.MenuList>li{
+    position: relative;
+    pointerEvents: 'none',
+}
+.MenuList > li::after{
+    content:" ";
+    position: absolute;
+    background-color: white;
+    width: 0%;
+    height:1px;
+    left:0;
+    bottom: -2px;
+    transition: 0.5s ease all .3s;
+}
+
+.MenuList>li:hover:after{
+    width:100%;
+    transition: 0.5s ease all;
+}
+
 .MenuList>li:hover{
-    cursor:pointer;
-    transform:scale(1.1);
-    transition: all 300ms;
+    cursor: pointer;
 }
 
 .MenuBar{
     display: flex;
     justify-content: center;
     background-color:#937DC2;
+    position :sticky;
+    top:0;
+    z-index:10;
 }
 .HomePageTitle{
     height:500px;
@@ -104,6 +130,11 @@ hr{
     cursor: pointer;
     margin-top: 100px;
 }
+.DownloadResume:hover{
+    color:#645CAA;
+    background-color: white;
+    border:1px solid #645CAA;
+}
 .EducationContent{
     display: flex;
     font-family: 'Signika Negative',cursive;
@@ -162,6 +193,9 @@ hr{
     display: flex;
     justify-content: center;
 }
+.ContactBox{
+    margin-top:40px;
+}
 .ContactBody{
     font-family: 'Signika Negative',cursive;
 }
@@ -175,10 +209,71 @@ hr{
 }
 .ContactFormHolder{
     display: flex;
+    margin-left:30%;
+    margin-top:35px;
 }
 .ContactTitle > p{
     font-size:19px;
 }
-.ContactForm > form > input{
-    display:block;
+.ContactForm > form > div >input{
+
+    width:340px;
+    height:40px;
+    border-radius: 5px;
+    border:none;
+    background-color: rgba(100,92,170,0.15);
+    margin-bottom:40px;
+    padding-left:10px;
+    font-weight: 600;
 }
+.ContactForm > form > div> textarea{
+    background-color:rgba(100,92,170,0.15) ;
+    border: none;
+    border-radius: 5px;
+    padding:10px;
+
+}
+.ContactForm > form > div> textarea:focus{
+    outline: none;
+}
+
+.ContactForm > form > div>input:focus{
+    outline: 0px;
+}
+
+.ContactForm {
+    margin-right: 90px;
+}
+
+.submitBtn{
+    width:150px;
+    background-color: #645CAA;
+    color:white;
+    border:none;
+    font-size:19px;
+    padding:12px;
+    letter-spacing: 2px;
+    border-radius:5px;
+    margin-top:40px;
+}
+.submitBtn:hover{
+    cursor:pointer;
+    color:#645CAA;
+    background-color: white;
+    border:1px solid #645CAA;
+}
+
+.EndCreds{
+    width:100%;
+    height:50px;
+    background-color: rgba(198, 137,198,0.3);
+    margin-top:20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'ASPA Condensed',sans-serif;
+    letter-spacing: 10px;
+    font-size: 20px;
+
+}
+

@@ -8,17 +8,17 @@
         <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        
     </head>
     <body>
         <div class="HomePage">
             <div class="MenuBar">
                 <ul class="MenuList">
-                    <li>HOME</li>
-                    <li>ABOUT</li>
-                    <li>RESUME</li>
-                    <li>WORKS</li>
-                    <li>TESTIMONIALS</li>
-                    <li>CONTACT</li>
+                    <li id="toHome">HOME</li>
+                    <li id="toAbout">ABOUT</li>
+                    <li id="toResume">RESUME</li>
+                    <li id="toWorks">WORKS</li>
+                    <li id="toContact">CONTACT</li>
                 </ul>
             </div>
             <div class="HomePageTitle">
@@ -199,19 +199,27 @@
                         <div class="ContactFormHolder">
                             <div class="ContactForm">
                                 <form>
-                                    <label for="nameInput">Name<span><sup>*</sup></span></label>
+                                    <div>
+                                        <label for="nameInput" style="margin-right:50px;">Name<span><sup>*</sup></span></label>
                                     <input type="text" id="nameInput" />
-                                    <label for="emailInput">Email<span><sup>*</sup></span></label>
+                                    </div>
+                                    <div>
+                                        <label for="emailInput"style="margin-right:50px;">Email<span><sup>*</sup></span></label>
                                     <input type="email" id="emailInput" />
-                                    <label for="subInput">Subject<span><sup>*</sup></span></label>
-                                    <input type="text" id="subInput" />
-                                    <label for="msgInput">Message</label>
-                                    <textarea id="msgInput" ></textarea>
+                                    </div>
+                                    <div>
+                                        <label for="subInput" style="margin-right:35px;">Subject<span><sup>*</sup></span></label>
+                                        <input type="text" id="subInput" />
+                                    </div>
+                                    <div><label for="msgInput" style="margin-right:35px;">Message</label>
+                                        <textarea id="msgInput" rows="15" cols="40"></textarea>
+                                    </div>
                                     <button type="submit" class="submitBtn">SUBMIT</button>
+
                                 </form>
                             </div>
                             <div class="AddressBody">
-                                <p>Addres and Phone</p>
+                                <h2>Address and Phone</h2>
                                 <p>Maverick 1600 Amphitheatre Parkway</p>
                                 <p>Mountain View, CA 94043 US</p>
                                 <p>(123)456-7890</p>
@@ -220,6 +228,10 @@
                     </div>
                 </div>
             </div>
+            <div class="EndCreds">
+                <p>PEACE.</p>
+            </div>
         </div>
+        <script src="Home.js"></script>
     </body>
 </html>
